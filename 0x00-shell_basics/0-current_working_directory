@@ -1,4 +1,2 @@
 #!/bin/bash
-cd "$(dirname "$0")" || exit 1
-absolute_path=$(readlink -f .)
-echo $absolute_path
+echo $(readlink -f .)
